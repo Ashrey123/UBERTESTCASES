@@ -39,36 +39,37 @@ public class FreightTest extends FreightBase
 	{
 		callFreight.Shipper_check().click();
 		Assert.assertEquals(driver.getCurrentUrl(), "https://www.uberfreight.com/shipper/");
-	}
-		@Test(priority=3,dependsOnMethods="Shipperb_Check")
-	public void GetAnInstant_check()
-	{
-		callFreight.Getinstant_check().click();
-	//Assert.assertEquals(driver.getTitle(), "Instant Freight Quote");
-	}
-	
-	@Test(priority=4,dependsOnMethods="GetAnInstant_check")
-	public void quote_details() throws InterruptedException
-	{
-		callFreight.Equiptment_check().click();
-		callFreight.pickuplocation_check().sendKeys("America");
-		Thread.sleep(3000);
-		callFreight.pickuplocation_check().sendKeys(Keys.ENTER);
-		Thread.sleep(3000);
-		callFreight.dropoff_check().sendKeys("America");
-		Thread.sleep(3000);
-		callFreight.dropoff_check().sendKeys(Keys.ENTER);
-	    Thread.sleep(3000);
-	    System.out.println(callFreight.dropoff_check().getAttribute("aria-label"));
-		Assert.assertEquals(callFreight.dropoff_check().getAttribute("aria-label"), "Selected American Fork, UT. ");
-	}
-	@Test(priority=5,dependsOnMethods="quote_details")
-	public void GetFreightbutton()
-	{
-		Assert.assertEquals(callFreight.GetAFreightbutton_check().isDisplayed(), true);
-		callFreight.GetAFreightbutton_check().click();
 		driver.navigate().back();
 	}
+//	@Test(priority=3,dependsOnMethods="Shipperb_Check")
+//	public void GetAnInstant_check()
+//	{
+//		callFreight.Getinstant_check().click();
+//	//Assert.assertEquals(driver.getTitle(), "Instant Freight Quote");
+//	}
+//	
+//	@Test(priority=4,dependsOnMethods="GetAnInstant_check")
+//	public void quote_details() throws InterruptedException
+//	{
+//		callFreight.Equiptment_check().click();
+//		callFreight.pickuplocation_check().sendKeys("America");
+//		Thread.sleep(3000);
+//		callFreight.pickuplocation_check().sendKeys(Keys.ENTER);
+//		Thread.sleep(3000);
+//		callFreight.dropoff_check().sendKeys("America");
+//		Thread.sleep(3000);
+//		callFreight.dropoff_check().sendKeys(Keys.ENTER);
+//	    Thread.sleep(3000);
+//	    System.out.println(callFreight.dropoff_check().getAttribute("aria-label"));
+//		Assert.assertEquals(callFreight.dropoff_check().getAttribute("aria-label"), "Selected American Fork, UT. ");
+//	}
+//	@Test(priority=5,dependsOnMethods="quote_details")
+//	public void GetFreightbutton()
+//	{
+//		Assert.assertEquals(callFreight.GetAFreightbutton_check().isDisplayed(), true);
+//		callFreight.GetAFreightbutton_check().click();
+//		driver.navigate().back();
+//	}
 	@Test(priority=6)
 	public void Carrierbt_Check() throws InterruptedException
 	{

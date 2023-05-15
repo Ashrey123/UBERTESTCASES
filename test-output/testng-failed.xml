@@ -3,14 +3,19 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="UBERTESTCASE.HomepageTest1">
+      <class name="UBERTESTCASE.FreightTest">
         <methods>
-          <include name="x"/>
-          <include name="y"/>
-          <include name="ridenow"/>
-          <include name="lau"/>
+          <include name="Shipperb_Check"/>
+          <include name="GetFreightbutton"/>
+          <include name="GetAnInstant_check"/>
+          <include name="khtam"/>
+          <include name="Modes_chec"/>
+          <include name="launchf"/>
+          <include name="quote_details"/>
+          <include name="cross_chec"/>
+          <include name="language_cha"/>
         </methods>
-      </class> <!-- UBERTESTCASE.HomepageTest1 -->
+      </class> <!-- UBERTESTCASE.FreightTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
