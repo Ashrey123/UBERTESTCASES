@@ -154,7 +154,7 @@ public class FreightTest extends FreightBase
 	public void CoonectWithexpert()
 	{
 		callFreight.experts_ch().click();
-		Assert.assertEquals(driver.getTitle(), "Contact Us - Uber Freight");
+		Assert.assertEquals(driver.getTitle(), "Contact us - Uber Freight");
 		driver.navigate().back();
 	}
 	@Test(priority=17)
@@ -171,7 +171,7 @@ public class FreightTest extends FreightBase
 		callFreight.langauge_ch().click();
 		Thread.sleep(2000);
 		Actions ac= new Actions(driver);
-		WebElement w1= driver.findElement(By.xpath("//a[@href='https://www.uberfreight.com/fr/']"));
+		WebElement w1= driver.findElement(By.xpath("//a[normalize-space()='Français']"));
         ac.moveToElement(w1).click().perform();
         Thread.sleep(3000);
         Assert.assertEquals(driver.getTitle(), "Accueil - Uber Freight");

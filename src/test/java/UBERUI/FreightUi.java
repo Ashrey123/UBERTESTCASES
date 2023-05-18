@@ -35,7 +35,7 @@ WebElement Carrierbut;
 @FindBy(xpath="//a[text()='Resources']")
 WebElement resourcebt;
 
-@FindBy(xpath="(//a[text()='Resource Library'])[1]")
+@FindBy(xpath="//li[@id='menu-item-990131']//a[normalize-space()='Resource library']")
 WebElement resourcelib;
 
 @FindBy(xpath="//a[text()='Company']")
@@ -84,7 +84,7 @@ WebElement submitbt;
 @FindBy(xpath="//a[@href='https://www.uberfreight.com/contact-us/']")
 WebElement expert;
 
-@FindBy(xpath="//a[@href='//youtu.be/WM8DGjhdIGU']")
+@FindBy(xpath="//a[@class='btn btn-white is-icon']")
 WebElement video;
 
 @FindBy(xpath="(//button[@data-target='#language-popup'])[2]")

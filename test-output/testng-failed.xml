@@ -5,13 +5,9 @@
     <classes>
       <class name="UBERTESTCASE.FreightTest">
         <methods>
-          <include name="Shipperb_Check"/>
-          <include name="GetFreightbutton"/>
-          <include name="GetAnInstant_check"/>
           <include name="khtam"/>
-          <include name="Modes_chec"/>
           <include name="launchf"/>
-          <include name="quote_details"/>
+          <include name="Modes_chec"/>
           <include name="cross_chec"/>
           <include name="language_cha"/>
         </methods>
